@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Recuperar Contraseña</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      line-height: 1;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="flex flex-col items-center justify-center p-4 min-h-screen">
+<div class="flex w-full max-w-md flex-col items-center">
+<!-- Houston Chamber of Commerce Logo -->
+<div class="mb-8 w-full max-w-[200px] @container">
+<div class="w-full gap-1 overflow-hidden bg-transparent @[480px]:gap-2 rounded-lg flex aspect-[16/9]">
+<div class="w-full bg-center bg-no-repeat bg-contain" data-alt="Houston Chamber of Commerce Logo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDS4uYipeepptDPzZrjHTksl83q8PSS9IE45uv8rsFt015XG3GhJzuSaIIS58XOjN_laMgSQWl1BG-bq5WGE5XwIv5CvyDEns2iFDetCjlZ0IpIWJEU-N6jhjEU0VTX6V27yLBu7SQ5Ic4pDO3kO9J3XeUkc-XtxIDTvlK1Ln5JPa8DCOv9dsdb1OEEtYpCq4FHFoSrJA1yyhqDmun2aN9e2SHFknaRSCiC8ln3ST60Oje4w4B7kNOFZEe1kPYFJ9acoWDrkOsZrQs");'></div>
+</div>
+</div>
+<!-- Headline -->
+<h1 class="text-slate-900 dark:text-white tracking-tight text-3xl font-bold leading-tight text-center pb-2 pt-4">¿Olvidaste tu contraseña?</h1>
+<!-- Instructional Text -->
+<p class="text-slate-600 dark:text-slate-400 text-base font-normal leading-normal pb-8 text-center max-w-xs">Ingresa tu correo electrónico y te enviaremos un enlace para restablecer tu contraseña.</p>
+<!-- Email Input Field -->
+<div class="flex w-full flex-wrap items-end gap-4 py-3">
+<label class="flex w-full flex-col flex-1">
+<p class="text-slate-800 dark:text-white text-sm font-medium leading-normal pb-2">Correo electrónico</p>
+<div class="flex w-full flex-1 items-stretch rounded-lg">
+<div class="text-slate-400 dark:text-slate-500 flex border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined text-base">mail</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-slate-900 dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 focus:border-primary h-12 placeholder:text-slate-400 dark:placeholder:text-slate-500 p-3 rounded-l-none pl-2 text-base font-normal leading-normal" placeholder="tu@email.com" value=""/>
+</div>
+</label>
+</div>
+<!-- Primary CTA Button -->
+<div class="flex w-full px-0 py-3">
+<button class="flex min-w-[84px] max-w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 flex-1 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate">Enviar Enlace de Recuperación</span>
+</button>
+</div>
+<!-- Secondary Action Link -->
+<div class="flex px-4 py-4">
+<a class="text-primary hover:underline text-sm font-semibold leading-normal" href="#">
+<span class="truncate">Volver a Iniciar Sesión</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</body></html>

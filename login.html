@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Acceso para Miembros - Cámara de Comercio de Houston</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#002D62",
+              "background-light": "#F7F8FA",
+              "background-dark": "#101922",
+              "text-light": "#333333",
+              "text-dark": "#f8fafc",
+              "subtle-light": "#e2e8f0",
+              "subtle-dark": "#324d67",
+              "placeholder-light": "#94a3b8",
+              "placeholder-dark": "#92adc9",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex min-h-screen w-full flex-col items-center justify-center bg-background-light dark:bg-background-dark p-4">
+<div class="flex w-full max-w-md flex-col items-center">
+<!-- Logo -->
+<div class="mb-8 flex w-24 h-24 items-center justify-center">
+<div class="w-full bg-center bg-no-repeat bg-cover aspect-square rounded-full" data-alt="Official logo of the Houston Chamber of Commerce" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAeDmbISHaqlg43x65elEGc53jPHZ1qWuXKSk8FCL_hLBcai8-A2ydOD3JqgSryJiSd_8Olt1l9PnxrvRnAIKp8IbwnzSZ0TIb9-G6WYrR-UbIONg4k5dP9oKvVt2EmydigZXo82r-w7SI_cVbZXrm4P-gTdOnQuEdQ81zSEsNSsjDe5jV55ErJCNSkYQEiIcYnOMXToEsebLay6F05XWFAOS9PWHNYPWRlM9BdO1u9QSotk43RUVa7BwBxjw1Q3IKGc1nZ90xx2t0");'></div>
+</div>
+<!-- Headline -->
+<h1 class="text-text-light dark:text-text-dark text-[32px] font-bold leading-tight text-center pb-6">Acceso para Miembros</h1>
+<!-- Form -->
+<div class="w-full space-y-4">
+<!-- Email Field -->
+<label class="flex flex-col w-full">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal pb-2">Correo electrónico</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-subtle-light dark:border-subtle-dark bg-white dark:bg-background-dark h-14 placeholder:text-placeholder-light dark:placeholder:text-placeholder-dark p-[15px] text-base font-normal leading-normal" placeholder="Introduce tu correo electrónico" type="email" value=""/>
+</label>
+<!-- Password Field -->
+<label class="flex flex-col w-full">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal pb-2">Contraseña</p>
+<div class="flex w-full flex-1 items-stretch">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg rounded-r-none border-r-0 text-text-light dark:text-text-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-subtle-light dark:border-subtle-dark bg-white dark:bg-background-dark h-14 placeholder:text-placeholder-light dark:placeholder:text-placeholder-dark p-[15px] pr-2 text-base font-normal leading-normal" placeholder="Introduce tu contraseña" type="password" value=""/>
+<div class="flex items-center justify-center rounded-r-lg border border-l-0 border-subtle-light dark:border-subtle-dark bg-white dark:bg-background-dark pr-[15px] text-placeholder-light dark:text-placeholder-dark">
+<span class="material-symbols-outlined" data-icon="Eye" data-size="24px" data-weight="regular">visibility</span>
+</div>
+</div>
+</label>
+<!-- Forgot Password -->
+<div class="flex justify-end">
+<a class="text-primary text-sm font-medium leading-normal underline" href="#">¿Olvidé mi contraseña?</a>
+</div>
+<!-- Login Button -->
+<button class="flex w-full items-center justify-center rounded-lg h-14 bg-primary px-6 text-base font-bold text-white shadow-sm hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary mt-4">
+                    Iniciar Sesión
+                </button>
+</div>
+<!-- Separator -->
+<div class="flex w-full items-center gap-4 py-6">
+<hr class="w-full border-subtle-light dark:border-subtle-dark"/>
+<p class="text-sm font-medium text-placeholder-light dark:text-placeholder-dark">o</p>
+<hr class="w-full border-subtle-light dark:border-subtle-dark"/>
+</div>
+<!-- Social Logins -->
+<div class="w-full space-y-4">
+<button class="flex w-full items-center justify-center gap-3 rounded-lg border border-subtle-light dark:border-subtle-dark bg-white dark:bg-background-dark px-6 py-3.5 text-base font-semibold text-text-light dark:text-text-dark shadow-sm hover:bg-subtle-light/50 dark:hover:bg-subtle-dark/50">
+<div class="h-6 w-6 bg-center bg-no-repeat bg-contain" data-alt="Google G logo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1AldUCkaWSvtWvXuVa4IlgVQ8oRBCiMmTAhkKXvEW3KI--qtps53gE0j4A7My0t3Iq_FB712UN1fhrTZdM4aPL6DkC13pnyftklBrh3lclcgd9k0FmscDblb0gMzHoE6N4tgWyqiUHnSiDsMV-1q82qQ8DnFvCVNNksjzOSorT4rbHCwBu-P67g6gtNxdWLez7mm4AtWbqVAOPhyfPTO3TdnZX2cKFl5ihyLKZrYECEIGpXKqWSUwrAFFO1swqwAF_qNTYgYEww4");'></div>
+                    Continuar con Google
+                </button>
+<button class="flex w-full items-center justify-center gap-3 rounded-lg border border-subtle-light dark:border-subtle-dark bg-white dark:bg-background-dark px-6 py-3.5 text-base font-semibold text-text-light dark:text-text-dark shadow-sm hover:bg-subtle-light/50 dark:hover:bg-subtle-dark/50">
+<div class="h-6 w-6 bg-center bg-no-repeat bg-contain" data-alt="Facebook F logo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfm7l-_W9M5bYpNyM4NZAqXvguY5KxPhXc1FRpjB486tnXsJ9y32t21qRbfO1rpiO_VeyJviPljWejhxDFl6eNfgBICt7btZsLwTKV_E9FgrvXAsdIPFotERKtHATiTMviBLZkDGArJ6nAXHrhqIx5pAUYW_pNfcZLY7xUrQv7O53K2mjBCzv8Lg84GP-n7I90BL6q26xYnsdXy7He76jSvd8agtpA2O8S2KwvcPqIPdpQyNxd4O65YP93B9DWI92MVH_OMNIKSuI");'></div>
+                    Continuar con Facebook
+                </button>
+</div>
+<!-- Sign Up Link -->
+<p class="text-text-light dark:text-text-dark text-sm font-normal leading-normal pt-8 text-center">
+                ¿Aún no eres miembro? <a class="font-semibold text-primary underline" href="#">Únete aquí.</a>
+</p>
+</div>
+</div>
+</body></html>

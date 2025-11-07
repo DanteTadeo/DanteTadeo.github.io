@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Houston Chamber of Commerce - Events &amp; Media</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#137fec",
+              "background-light": "#f5f5f7",
+              "background-dark": "#101922",
+              "corporate-blue": "#002D62",
+              "accent-gold": "#D4A017",
+              "text-light-primary": "#000000",
+              "text-light-secondary": "#333333",
+              "text-dark-primary": "#FFFFFF",
+              "text-dark-secondary": "#cbd5e1"
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {
+                "DEFAULT": "0.25rem", 
+                "lg": "0.75rem", 
+                "xl": "1rem", 
+                "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center p-4 pb-2 justify-between bg-background-light dark:bg-background-dark sticky top-0 z-10">
+<div class="flex size-12 shrink-0 items-center">
+<span class="material-symbols-outlined text-text-light-primary dark:text-text-dark-primary text-2xl">widgets</span>
+</div>
+<h2 class="text-text-light-primary dark:text-text-dark-primary text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Eventos y Medios</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-text-light-primary dark:text-text-dark-primary gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined text-2xl">notifications</span>
+</button>
+</div>
+</div>
+<!-- Search Bar -->
+<div class="px-4 py-3">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-slate-500 dark:text-slate-400 flex border-none bg-white dark:bg-slate-800 items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined text-2xl">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light-primary dark:text-text-dark-primary focus:outline-0 focus:ring-0 border-none bg-white dark:bg-slate-800 focus:border-none h-full placeholder:text-slate-500 dark:placeholder:text-slate-400 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Buscar eventos o medios" value=""/>
+</div>
+</label>
+</div>
+<!-- Tabs -->
+<div class="pb-3 sticky top-[72px] bg-background-light dark:bg-background-dark z-10">
+<div class="flex border-b border-slate-200 dark:border-slate-700 px-4 justify-between">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-corporate-blue text-corporate-blue dark:text-primary pb-[13px] pt-4 flex-1" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Eventos</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-text-light-secondary dark:text-text-dark-secondary pb-[13px] pt-4 flex-1" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Galería</p>
+</a>
+</div>
+</div>
+<!-- Chips / Filters -->
+<div class="flex gap-3 p-4 overflow-x-auto">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-corporate-blue/10 dark:bg-primary/20 px-4">
+<span class="material-symbols-outlined text-corporate-blue dark:text-primary text-base">tune</span>
+<p class="text-corporate-blue dark:text-primary text-sm font-medium leading-normal">Todos</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-slate-800 px-4">
+<span class="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary text-base">groups</span>
+<p class="text-text-light-secondary dark:text-text-dark-secondary text-sm font-medium leading-normal">Networking</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-slate-800 px-4">
+<span class="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary text-base">smart_display</span>
+<p class="text-text-light-secondary dark:text-text-dark-secondary text-sm font-medium leading-normal">Webinar</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-slate-800 px-4">
+<span class="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary text-base">corporate_fare</span>
+<p class="text-text-light-secondary dark:text-text-dark-secondary text-sm font-medium leading-normal">Conferencia</p>
+</div>
+</div>
+<main class="flex-1 px-4">
+<!-- Section Header -->
+<h2 class="text-text-light-primary dark:text-text-dark-primary text-[22px] font-bold leading-tight tracking-[-0.015em] pt-5 pb-3">Próximos Eventos</h2>
+<!-- Event Card 1 -->
+<div class="bg-white dark:bg-slate-800/50 rounded-xl overflow-hidden mb-6 shadow-sm">
+<img class="w-full h-40 object-cover" data-alt="People at a tech conference listening to a speaker on stage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk8LX6C_HeShV88aFogF4VT4HbtOWkW2j7Z-uIBQy1GG_Fwq_iUSdUicN5Fnlr5NytxDSrs2hBCMr1E0vMKzC-_XkJhZIdd3fk_swnxoxgZ1s0rnTnVvvRHQu8lQk7uwJjwPCswKpnQgmJw4Hs2snJ2i7USzZlyI4dRWIJwHz1Oy8cQjxWT2FtIB5UArGjsOJPIIUlW2xrM1BFIsf9Xe2D-E6S1PjyIWyA2_JORKwYQK5DQuzIrZgv1y6cPH0dbQHcEHTEV_9PFII"/>
+<div class="p-4">
+<h3 class="text-text-light-primary dark:text-text-dark-primary text-lg font-bold">Networking Breakfast: Tech Innovation</h3>
+<div class="flex items-center gap-2 text-accent-gold mt-2">
+<span class="material-symbols-outlined text-base">calendar_today</span>
+<p class="text-sm font-medium">15 de Agosto, 2024 - 8:00 AM</p>
+</div>
+<div class="flex items-center gap-2 text-text-light-secondary dark:text-text-dark-secondary mt-1">
+<span class="material-symbols-outlined text-base">location_on</span>
+<p class="text-sm">Houston Technology Center</p>
+</div>
+<!-- Attendee Carousel -->
+<div class="mt-4">
+<h4 class="text-sm font-bold text-text-light-secondary dark:text-text-dark-secondary mb-2">Asistentes Confirmados</h4>
+<div class="flex items-center -space-x-3">
+<img class="inline-block size-9 rounded-full ring-2 ring-white dark:ring-slate-800" data-alt="Profile picture of a man with glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUxKEXrgl6XRyAnGfGImg2bw9vl4y0QjsFFHv0nJBBfepxfCeAuFopwfjVK9vkZkbn0aCZyxtLGuWxVJ3E2vMU8OXLVN4L8gWHliLZiMD98BVwP87wcAaOtLA_dJD6XOjlssyCqMXrtZ4-hiLBK7q_8EbHeHzDCiSjCATUXKKgMwnXErB27kDibcs-0d0kgRo_Vt3XfESAsS4q56BO3hbDOeVHLcBuYFg-Np5ycPtxFN0EeQsg469TFFS0CacIZVfvNecjfoV3Sjw"/>
+<img class="inline-block size-9 rounded-full ring-2 ring-white dark:ring-slate-800" data-alt="Profile picture of a woman smiling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqCQv-HJuCYhR5HC3olB7JAZ65oLPeHul6YR7ztyqhOdPxe9v5T3WmsIBqF9tq5XrdKGmOOvqWApOh4kAAfyrqqACZUM_8s4uGmV9x77PRXcTpupDAHMMl0I1MgOYEsGqirQMiC5maUumD-X65oQCPLKYColhIdJfwMbnEwOV0m0YvVktMzTy1bZf9cZ8ZJnEC8OcobN__UqESKJ01-7a23ydd88iuEWd8GJypx0fTI1H2uW_-Cb3LfZn5JSUumH7wKyMGyE4xaj8"/>
+<img class="inline-block size-9 rounded-full ring-2 ring-white dark:ring-slate-800" data-alt="Profile picture of a bearded man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVGXctUvOQ8UmGxF2xY8449OYwGrsZeA4ApG_ax23bYl4s0ktdwxIfwrBFZaCccetT_aOzfVWGO4n_DSaefWMOo98tMsSv5wSgI_0aKKr2LkgOrF2BwJsY8Rg3-JsGtGl9rC_-ILbDYSdWyj7XG29GcpKSXJ9oLWUl6JeBTzyhu-HFlC37ZoUNDdozs7OLQOaAYdT5qq5CW_i1UVBSnvEC9xC_4O7XOfIesruYyKwrG0fuyuwcdso2sc3dm7pVg6bbGH_28qyG_uc"/>
+<img class="inline-block size-9 rounded-full ring-2 ring-white dark:ring-slate-800" data-alt="Profile picture of a smiling man in a suit" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYeQw6KkF0C-KGWtqdsazxK3dm85GxliE1hzTzlDWxqSoqowPPTSX6KAP428Y0tixxOosR8uF7-q4CdDEbh8KpqUXQSZv8CqeGiSOKVxJFhZ1n0QCjEOsj1FPmmd3phtEOpkPGcDXDKcTTWRhJAKwhQ1MZNdjxAVTNyvlNYH8wwAFYHZaZze4ab4ktEA5fdENoGZzFNC6pw6gkSPnCNsvamEAQfZriqltqIo03gYsPV6ffiR-G5kqfCH-XYugjwTTMH8Hyep_gJxg"/>
+<div class="flex size-9 items-center justify-center rounded-full bg-slate-200 dark:bg-slate-700 ring-2 ring-white dark:ring-slate-800">
+<span class="text-xs font-medium text-text-light-secondary dark:text-text-dark-secondary">+12</span>
+</div>
+</div>
+</div>
+<button class="w-full mt-4 h-12 flex items-center justify-center rounded-lg bg-green-600/20 text-green-500 gap-2 font-bold">
+<span class="material-symbols-outlined">check_circle</span>
+                        Confirmado
+                    </button>
+</div>
+</div>
+<!-- Event Card 2 -->
+<div class="bg-white dark:bg-slate-800/50 rounded-xl overflow-hidden mb-6 shadow-sm">
+<img class="w-full h-40 object-cover" data-alt="Group of people working on laptops during a workshop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfrVWxsbhEeS4rJZWjtHDLzQO6BxV6pIaX7BqbkF99HKTOEOnKJEGa-Ys96_701OvvGqc5ILNHcBaxTePT8Vc5fKqfzd14cly9tsKjvwvCkONKIl0Dy8nTQTtpBI-uGf-l9iZ2AD8J_JAvg5AnhDQCUHSOfpX82MQkqJ7NpyyR-59q0kJIK10Pr7NQrSUwEr7sBlB_hVCNNrKdmCucUb6AsMGOn5168XSyfCypiiV4sjP394YHxbzZ5yycedGtQY2cL2jOepMyRtw"/>
+<div class="p-4">
+<h3 class="text-text-light-primary dark:text-text-dark-primary text-lg font-bold">Annual Leadership Conference</h3>
+<div class="flex items-center gap-2 text-accent-gold mt-2">
+<span class="material-symbols-outlined text-base">calendar_today</span>
+<p class="text-sm font-medium">25 de Septiembre, 2024 - 9:00 AM</p>
+</div>
+<div class="flex items-center gap-2 text-text-light-secondary dark:text-text-dark-secondary mt-1">
+<span class="material-symbols-outlined text-base">location_on</span>
+<p class="text-sm">Marriott Marquis Houston</p>
+</div>
+<!-- Attendee Carousel -->
+<div class="mt-4">
+<h4 class="text-sm font-bold text-text-light-secondary dark:text-text-dark-secondary mb-2">Asistentes Confirmados</h4>
+<div class="flex items-center -space-x-3">
+<img class="inline-block size-9 rounded-full ring-2 ring-white dark:ring-slate-800" data-alt="Profile picture of a professional woman." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD10XRJgPu8pgXEOAyA10wmCe4YH--p0dIH08lh7vPhXXIVtJdyhSs1P4o5UaNNmFW-3adEn54L3-c3I25Z-2RPplJshxhmQHGHENZkrs_xwuQuDNSJlGanap6b40LKbniuc774RJbJ1_raGxRM2Hs3GKn3SFP5z5cdsJVvaMLH1VaOsTwK3SqaSv8zV8Wjg8slRtH25ymaKWdK390Sy2Y_dApSznRPS4rbpbkwpOZAnQjG34lq6HLclBOxV6Igz7En89e2MvXbEdw"/>
+<img class="inline-block size-9 rounded-full ring-2 ring-white dark:ring-slate-800" data-alt="Profile picture of a man with glasses." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4y3m4sbV_hvRIedTiFUNmsCDNfx-x8HSGemZPJoR89EXmpz9tMr3Ux3K5alI8LC8IUqwIQk5BiqipSZ7U_55nPf-O2HfJYc13HhdOfICOuw8sTbSnsEI1v0sqoEOPEk24oLiP-gB9hnQVq07oK7vihVjWF9yu4IWLYfsFNiT37C3pusy_RpNPdvpcklzWp8vAc9-tr88MClSx6f9u1u2Q4DkvpvprDLfkPxL6tVhFrAl2sx00vUgL0z7UAAMSW-EKTlgqIy-D-nE"/>
+<img class="inline-block size-9 rounded-full ring-2 ring-white dark:ring-slate-800" data-alt="Profile picture of a woman smiling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAshF-D01cHCi3OqwXPEkbt9Px6fQBlD3WylIdy_fGrUdskAqqvDs7tD4XA26TXYBdUbaobOiNMGgvOt_7F_er4V4DDdQCiKwTVL09NCSeqLGkQYFVvgSGOBcp0KIsGrrzV1t4x3T80HAk2o7-frNSITw89ScYMbTyBxBV4YZNSWDBHGigLFyJePKbvPAN3kqJZFykfPDvvqeunhavBrSAJksZKwiApiRnJTR7TfXArb4OBJun4JATnFfnIKucrMv4OWsohLrbiQWA"/>
+<div class="flex size-9 items-center justify-center rounded-full bg-slate-200 dark:bg-slate-700 ring-2 ring-white dark:ring-slate-800">
+<span class="text-xs font-medium text-text-light-secondary dark:text-text-dark-secondary">+35</span>
+</div>
+</div>
+</div>
+<button class="w-full mt-4 h-12 flex items-center justify-center rounded-lg bg-corporate-blue dark:bg-primary text-white font-bold">
+                        Confirmar Asistencia
+                    </button>
+</div>
+</div>
+</main>
+</div>
+</body></html>

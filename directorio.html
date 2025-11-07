@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Directorio de Miembros - Cámara de Comercio de Houston</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#002D62",
+            "secondary": "#CE1126",
+            "accent": "#FFC72C",
+            "background-light": "#F4F4F4",
+            "background-dark": "#101922",
+            "text-light": "#333333",
+            "text-dark": "#F4F4F4"
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Header -->
+<header class="sticky top-0 z-20 bg-background-light dark:bg-background-dark/80 backdrop-blur-sm shadow-sm dark:shadow-md dark:shadow-black/20">
+<div class="flex items-center p-4 pb-3 justify-between">
+<h1 class="text-text-light dark:text-text-dark text-xl font-bold leading-tight tracking-tight flex-1">Directorio de Miembros</h1>
+<button class="text-text-light dark:text-text-dark flex size-10 shrink-0 items-center justify-center rounded-full">
+<span class="material-symbols-outlined text-2xl">
+            menu
+          </span>
+</button>
+</div>
+<!-- Search and Filters -->
+<div class="px-4 pb-3 flex items-center gap-3">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-text-light/70 dark:text-text-dark/60 flex border border-r-0 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 items-center justify-center pl-4 rounded-l-lg">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark focus:outline-0 focus:ring-2 focus:ring-inset focus:ring-primary dark:focus:ring-accent border border-l-0 border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 h-full placeholder:text-text-light/50 dark:placeholder:text-text-dark/40 px-4 rounded-l-none pl-2 text-base font-normal leading-normal" placeholder="Buscar por empresa, persona..." value=""/>
+</div>
+</label>
+<button class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-primary dark:text-accent">
+<span class="material-symbols-outlined text-2xl">filter_list</span>
+</button>
+</div>
+<!-- View Toggle -->
+<div class="flex px-4 pb-4">
+<div class="flex h-10 flex-1 items-center justify-center rounded-lg bg-gray-200 dark:bg-gray-800 p-1">
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-md px-2 has-[:checked]:bg-white dark:has-[:checked]:bg-background-dark has-[:checked]:shadow-sm text-text-light/60 dark:text-text-dark/60 has-[:checked]:text-primary dark:has-[:checked]:text-accent text-sm font-medium leading-normal transition-colors">
+<span class="truncate">Vista Mapa</span>
+<input checked="" class="invisible w-0" name="view-toggle" type="radio" value="Map View"/>
+</label>
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-md px-2 has-[:checked]:bg-white dark:has-[:checked]:bg-background-dark has-[:checked]:shadow-sm text-text-light/60 dark:text-text-dark/60 has-[:checked]:text-primary dark:has-[:checked]:text-accent text-sm font-medium leading-normal transition-colors">
+<span class="truncate">Vista Lista</span>
+<input class="invisible w-0" name="view-toggle" type="radio" value="List View"/>
+</label>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 relative">
+<!-- Map View -->
+<div class="absolute inset-0 flex flex-col h-full w-full">
+<div class="bg-cover bg-center flex min-h-[320px] flex-1 flex-col justify-between" data-alt="Mapa aéreo de Houston con pines de ubicación" data-location="Houston, TX" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDluR5eb_6KkFAkY115xdABT7lvnkjlGlLDpDUPVfUre30q_trW5Bbr3nmzb77b-dSJ4nqZ4d8IpJ5j47jx-H3WCep-1bbyWdvwzvLUsoypK7-MWrW1RZRmOUbaZQGmG8azeEdF9AAx81UvHoryA4alAMI_tS-ZBSaJPV78OUYgoMV52boFZMvfMU7nDKDJ6IgNWrkh2oAghPiqQK7L73wCK-FFGyGH4MHrzj1Q3XzEwiYp2OQ-d13o9rXtQaIhxd_sxAMk9fNRnTg");'>
+<div class="p-4 flex flex-col items-end gap-3 self-end mt-4">
+<div class="flex flex-col gap-0.5">
+<button class="flex size-10 items-center justify-center rounded-t-lg bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm shadow-md text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined">add</span>
+</button>
+<button class="flex size-10 items-center justify-center rounded-b-lg bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm shadow-md text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined">remove</span>
+</button>
+</div>
+<button class="flex size-10 items-center justify-center rounded-lg bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm shadow-md text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined">my_location</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bottom Sheet -->
+<div class="absolute inset-0 flex flex-col justify-end">
+<div class="flex flex-col items-stretch bg-background-light dark:bg-background-dark rounded-t-xl shadow-2xl dark:shadow-black/50 max-h-[85vh]">
+<button class="flex h-6 w-full items-center justify-center pt-2 shrink-0">
+<div class="h-1.5 w-10 rounded-full bg-gray-300 dark:bg-gray-700"></div>
+</button>
+<div class="px-4 pb-2 pt-1 flex justify-between items-center shrink-0">
+<h2 class="text-base font-bold text-text-light dark:text-text-dark">3 resultados cerca de ti</h2>
+<p class="text-sm text-text-light/70 dark:text-text-dark/60">Mostrar todos</p>
+</div>
+<!-- Company Profile Card (Content of Bottom Sheet) -->
+<div class="flex-1 overflow-y-auto p-4">
+<div class="flex flex-col gap-6">
+<!-- Company Info -->
+<div class="flex items-start gap-4">
+<img class="h-16 w-16 rounded-lg object-contain bg-white p-1 border border-gray-200 dark:border-gray-700" data-alt="Logotipo de Innovatech Solutions" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1lbGFEuujLrHKKnw6BmufzY35bOu807cPQ4RhxxigSgnzQKsvaxsj-gdCaiOAPG8rm09OuQwPa0xHOXd-SpxrH_ouNOmXM-7Ol1vuXo8HJYC2tfN-PizbbGwvZvWI3pOU69Cnb0HQdSNa6HTiCknRMZNJRqg9-Zmh1GLviYNC4f6kE9o6VucHfLvF1GS1v0m2u2QzG0Rq1HsKKL14AraOOZsFz5MWJxx8JfrbhAUnlHuji3oJ5PlIiqUQsAFrLTbsMMlhLwwqWQs"/>
+<div>
+<h3 class="text-xl font-bold text-text-light dark:text-text-dark">Innovatech Solutions</h3>
+<p class="text-sm text-text-light/70 dark:text-text-dark/60">Tecnología y Software</p>
+</div>
+</div>
+<!-- About Section -->
+<div>
+<h4 class="font-bold text-text-light dark:text-text-dark mb-2">Sobre Nosotros</h4>
+<p class="text-sm text-text-light/80 dark:text-text-dark/70 leading-relaxed">Innovatech Solutions se especializa en el desarrollo de software a medida y consultoría tecnológica para optimizar procesos empresariales y impulsar el crecimiento digital.</p>
+</div>
+<!-- Contact Section -->
+<div>
+<h4 class="font-bold text-text-light dark:text-text-dark mb-3">Información de Contacto</h4>
+<div class="space-y-3">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-xl text-primary dark:text-accent">location_on</span>
+<p class="text-sm text-text-light/90 dark:text-text-dark/80">123 Main St, Houston, TX 77002</p>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-xl text-primary dark:text-accent">call</span>
+<p class="text-sm text-text-light/90 dark:text-text-dark/80">(713) 555-0123</p>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-xl text-primary dark:text-accent">mail</span>
+<p class="text-sm text-text-light/90 dark:text-text-dark/80">contact@innovatech.com</p>
+</div>
+</div>
+</div>
+<!-- Special Offer -->
+<div>
+<h4 class="font-bold text-text-light dark:text-text-dark mb-3">Ofertas para Miembros</h4>
+<div class="border-2 border-dashed border-secondary/50 dark:border-accent/50 rounded-lg p-4 bg-secondary/5 dark:bg-accent/10">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-2xl text-secondary dark:text-accent mt-0.5">star</span>
+<div>
+<h5 class="font-bold text-secondary dark:text-accent">15% de Descuento en Consultoría</h5>
+<p class="text-sm text-text-light/80 dark:text-text-dark/70 mt-1">Mencione su membresía de la Cámara de Comercio para recibir un 15% de descuento en su primer proyecto de consultoría tecnológica con nosotros.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA Button -->
+<div class="pt-2">
+<button class="flex w-full items-center justify-center gap-2 rounded-lg bg-primary text-white h-12 text-base font-bold hover:bg-primary/90 transition-colors">
+<span>Visitar Sitio Web</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

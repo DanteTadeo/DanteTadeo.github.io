@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mensajes - Cámara de Comercio de Houston</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#002D62",
+            "background-light": "#F5F5F7",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col font-display group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="sticky top-0 z-10 bg-background-light dark:bg-background-dark shadow-sm dark:shadow-md dark:shadow-black/20">
+<div class="flex items-center p-4">
+<div class="flex size-12 shrink-0 items-center text-slate-800 dark:text-white">
+<span class="material-symbols-outlined text-3xl">search</span>
+</div>
+<h1 class="text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-tight flex-1 text-center">Mensajes</h1>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-slate-800 dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined text-3xl">add_comment</span>
+</button>
+</div>
+</div>
+<!-- Tabs -->
+<div class="px-4">
+<div class="flex border-b border-slate-200 dark:border-slate-700 justify-between">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-primary pb-3 pt-2 flex-1 relative" href="#">
+<p class="text-primary text-sm font-bold leading-normal">Directos</p>
+<div class="absolute top-1 right-3 flex size-4 items-center justify-center rounded-full bg-[#D48806] text-white text-[10px] font-bold">2</div>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-slate-500 dark:text-slate-400 pb-3 pt-2 flex-1" href="#">
+<p class="text-sm font-bold leading-normal">Grupos de Interés</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-slate-500 dark:text-slate-400 pb-3 pt-2 flex-1 relative" href="#">
+<p class="text-sm font-bold leading-normal">Exclusivos</p>
+<div class="absolute top-2 right-4 h-2 w-2 rounded-full bg-[#D48806]"></div>
+</a>
+</div>
+</div>
+</div>
+<!-- Chat List -->
+<div class="flex-1 pb-24">
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark px-4 min-h-[72px] py-3 justify-between">
+<div class="flex items-center gap-4 flex-1">
+<div class="relative shrink-0">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14" data-alt="Profile picture of Eleanor Pena" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQ0WzbmPKfNa5JFa5a1hdnBKy0rDab87xo2IxY2KSz5zTxezmFlYU1dS-TNzQM_5MJDsTsKmUoWjYKvB4BoyyPbQyzNzFjlg9eXes93DkdCpBP6ft2pOWwulxb5Vv0v4dfxyns4BERYaTu2S69JJ7Pz962W0VAybNv2AQ9M6hAuMhdQkkQKziK_pvLfgVwKjqF0YEmaAJ8kfiGUgLM5-JwlGmhUNbik7eNAWcOOJUebq14-xLKenqaidD6vwHpsmDA9tNSD_feyJs");'></div>
+<div class="absolute bottom-0 right-0 h-4 w-4 rounded-full bg-green-500 border-2 border-background-light dark:border-background-dark"></div>
+</div>
+<div class="flex flex-col justify-center overflow-hidden">
+<p class="text-slate-900 dark:text-white text-base font-semibold leading-normal truncate">Eleanor Pena</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal truncate">¡Perfecto! Nos vemos en la reunión de la próxima semana.</p>
+</div>
+</div>
+<div class="shrink-0 flex flex-col items-end gap-1">
+<p class="text-slate-500 dark:text-slate-400 text-xs font-normal leading-normal">3:41 PM</p>
+<div class="flex size-6 items-center justify-center rounded-full bg-[#D48806]">
+<p class="text-white text-xs font-bold">1</p>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark px-4 min-h-[72px] py-3 justify-between">
+<div class="flex items-center gap-4 flex-1">
+<div class="relative shrink-0">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14" data-alt="Profile picture of Jacob Jones" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAqGk51H8cinAa9qiKVihsC_0O-ru3AOQbOxeB95SY4Sk_Z4Vg7LBfumNUH0uX3vSRRA6A7d6EDhzIu140wVkr1BZBQHzHGbqfeddP3h4pKpvJlNI8hmctUmIYmoEcU5Om_fOD0KNGFaN2e4Uj5436BggIIurZY6-cakXaz27H06RVdszN7BazCOJ6hFWsX5q3-w5eQ-24ZfVDqKNDTbdO6byx5w2v9_mwAwBh4QUn0nQKRxTAsS2Q7pRpyTvqnwrIlC_tNGHh43So");'></div>
+</div>
+<div class="flex flex-col justify-center overflow-hidden">
+<p class="text-slate-900 dark:text-white text-base font-semibold leading-normal truncate">Jacob Jones</p>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-normal truncate">Claro, te reenvío el documento ahora mismo.</p>
+</div>
+</div>
+<div class="shrink-0 flex flex-col items-end gap-1">
+<p class="text-slate-500 dark:text-slate-400 text-xs font-normal leading-normal">11:02 AM</p>
+<div class="flex size-6 items-center justify-center rounded-full bg-[#D48806]">
+<p class="text-white text-xs font-bold">1</p>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark px-4 min-h-[72px] py-3 justify-between">
+<div class="flex items-center gap-4 flex-1">
+<div class="relative shrink-0">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14" data-alt="Profile picture of Cameron Williamson" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDXOlKuwoSaJhLcr54_PbvDlgi_5bKmrJWx-fp9QcQbqmaKJ1tFMCQe9z-px1kabvBeUSAuEpgSE7_PxT6L8zJ0ptXWH5XNmIUA1wD7en6Ftkf2C1ElhUxVycJkNasnd-yjB5ced9VdFL9khPqV7Y_AbBkbeuxCCITH8IpiPpvCpBv_3nPChELG5bnf9eYd0-lcwQmP3W0iHxwI-iHIUrJTs2nJ4_u2cwgt5fMqb9rxjVk2_xdXiV8rEGcWpwOVNrZiYlp3VXkfJx4");'></div>
+<div class="absolute bottom-0 right-0 h-4 w-4 rounded-full bg-green-500 border-2 border-background-light dark:border-background-dark"></div>
+</div>
+<div class="flex flex-col justify-center overflow-hidden">
+<p class="text-slate-900 dark:text-white text-base font-semibold leading-normal truncate">Cameron Williamson</p>
+<p class="text-slate-500 dark:text-slate-500 text-sm font-normal leading-normal truncate">Genial, muchas gracias por la información.</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-slate-500 dark:text-slate-400 text-xs font-normal leading-normal">Ayer</p></div>
+</div>
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark px-4 min-h-[72px] py-3 justify-between">
+<div class="flex items-center gap-4 flex-1">
+<div class="relative shrink-0">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14" data-alt="Profile picture of Brooklyn Simmons" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAn6-AN5koJRPHMrP3-KRpt615kRv9bAgl0Z0-hUhe2p6q3u4wPPlMsx3PL4qk1McMQ6HFUCSyo4PN20gd2mjq_3_quMjytBCCBQOZZhSOj3j-JbOSBN66T6ZTDWQ5WvVzgcoe2VLvT9zNLto8suEHoFjzmFXt9EGuUymV_atXesPMXYNGqhG2hBcfnsomIrlc5tYtcJdCKhAH0AmGxvlp9HPF6aprznHdkcID4NARRJexEqsJ8mR8s82XLL2j27XYlXG6jlZWFvsc");'></div>
+</div>
+<div class="flex flex-col justify-center overflow-hidden">
+<p class="text-slate-900 dark:text-white text-base font-semibold leading-normal truncate">Brooklyn Simmons</p>
+<p class="text-slate-500 dark:text-slate-500 text-sm font-normal leading-normal truncate">¡Por supuesto! Fue un placer conectar.</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-slate-500 dark:text-slate-400 text-xs font-normal leading-normal">2d</p></div>
+</div>
+<div class="flex items-center gap-4 bg-background-light dark:bg-background-dark px-4 min-h-[72px] py-3 justify-between">
+<div class="flex items-center gap-4 flex-1">
+<div class="relative shrink-0">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14" data-alt="Profile picture of Jenny Wilson" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDwsLS2kosr0iWOVovPVyDVf3hBbVMqkuhjdNY2TtnhzSqRscOY0sRJGZvUeTGkQ6wYK82zgWCDLa5A92iFc39r93zvVo0DkDhl64PW3aNQoQ4lkMn9ag2D6KiVC9mTh3qAuvHio07ul1YTJ0qtdjdTij_mWzxsILXoriTOeHOjRDk5SMP6_rENl6FOJ_KPLNvZPLAfwrZU-bW88LIsVVa7-OHQ-868BPVdjJXxTkEtnPoin3Z5T-nu2jTWHaQHDFNWXBfLZNa0gkM");'></div>
+</div>
+<div class="flex flex-col justify-center overflow-hidden">
+<p class="text-slate-900 dark:text-white text-base font-semibold leading-normal truncate">Jenny Wilson</p>
+<p class="text-slate-500 dark:text-slate-500 text-sm font-normal leading-normal truncate">Revisaré el calendario y te confirmo.</p>
+</div>
+</div>
+<div class="shrink-0"><p class="text-slate-500 dark:text-slate-400 text-xs font-normal leading-normal">5d</p></div>
+</div>
+</div>
+</div>
+</body></html>
